@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Sạp hàng của nhóm 3 {% endblock %}
+{% block css %}
+{% endblock %}
+{% block body %}
+
+<div class="container mt-2 mb-3">
+
+  <div class="row">
+    {% for product in products %}
+    <div class="col-lg-4 my-4" style=" display:flex;justify-content: center;">
+      <div class="card shadow align-items-center" style="width: 18rem;box-sizing: border-box;border-radius: 30px;padding: 5%;">
+        <a href="/product_view/{{product.id}}/" >
+          <img src="/media/{{product.image}}" class="card-img-top" style="width: 175px; height: 175px; " alt="...">
+        </a>
+        <div class="card-body" style="display: flex; flex-direction: column;">
+          <h5 class="card-title" style="display: flex; justify-content: center;">{{product.name}}</h5>
+          {% if request.user.is_authenticated %}
+          <button data-product="{{product.id}}" data-action="add" class="btn add-btn update-cart"
+            style="background-color: #ffa601; color: rgb(5, 0, 0); border-radius: 15px;">Thêm vào giỏ hàng</button>
+          {% else %}
+          {% endif %}
+          <h4 style="display: inline-block; float: right;">&nbsp;{{product.formatted_price}}</h4>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+{% block js %}
+<script>
+{% if alert %}
+  alert("Logout Sucessfull.")
+  window.location.href = '/'
+{% endif %}
+</script>
+{% endblock %}
