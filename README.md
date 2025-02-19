@@ -36,7 +36,7 @@ Báo cáo doanh thu: Cung cấp dữ liệu doanh thu, sản phẩm bán chạy.
 
 4.  Mô tả dự án
 
-Đây là dự án chúng tôi triển khai trong môn học Kỹ thuật phần mềm được thầy  là giảng viên hướng dẫn.
+Đây là dự án chúng tôi triển khai trong môn học Kỹ thuật phần mềm được thầy Vũ Quang Dũng là giảng viên hướng dẫn.
 Với ý tưởng về "Phi Dương", chúng tôi - 4 người, qua hơn 10 ngày cùng thảo luận về cách chủ đề và phương hướng thực tiễn cuối cùng chọn mô hình kinh doanh mặt hàng second hand. Cụ thể là các thiết bị, đồ dùng, trang phục có chất lượng nhất định sẽ trở thành đối tượng thu mua của chúng tôi và bày bán lại với các "chủ nhân mới có nhu cầu". Phương thức chúng tôi mang những sản phẩm đó tay người dùng là internet thông qua trang web "Phi Dương".
 
 Để chạy dự án, bạn cần install python3, SQLite (là database để xem dữ liệu server) và framework Django của python. Theo danh sách video hướng dẫn của tác giả nhóm howKteam,  trong link dưới đây
